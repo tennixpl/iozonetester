@@ -13,6 +13,7 @@ else
       mkdir -p $i
       /iozone/iozone3_465/src/current/iozone -a > $i/test.txt
       pwd
+      python create_json $i/test.txt
     done
 fi
 ls /target/
