@@ -20,8 +20,6 @@ RUN echo $PWD
 #RUN chmod +x docker-entrypoint.sh
 RUN yum install -y git
 RUN git clone https://github.com/tennixpl/ioz-json-export.git
-# RUN yum install -y python36u
-
 COPY ./docker-entrypoint.sh /
 RUN ls
 #RUN chmod +x /usr/local/bin/docker-entrypoint.sh
